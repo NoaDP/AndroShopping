@@ -11,8 +11,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/autentificar"
-        android:text="@string/autentificar"
+        android:id="@+id/autenticacion"
+        android:text="@string/autenticacion"
         android:textSize="30sp"
         android:gravity="center"
         android:layout_marginTop="25dp"
@@ -25,11 +25,11 @@
         android:text="@string/email"
         android:textSize="25sp"
         android:layout_marginTop="25dp"
-        android:layout_below="@id/autentificar"
+        android:layout_below="@id/autenticacion"
         />
 
     <EditText
-        android:id="@+id/introducir"
+        android:id="@+id/introemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/introemail"
@@ -37,11 +37,11 @@
         />
 
     <TextView
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/password"
         android:text="@string/password"
-        android:layout_below="@id/introducir"
+        android:layout_below="@id/introemail"
         android:textSize="25sp"
         android:layout_marginTop="25dp"
         />
@@ -57,6 +57,7 @@
 
 
     <Button
+        android:id="@+id/entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/entrar"

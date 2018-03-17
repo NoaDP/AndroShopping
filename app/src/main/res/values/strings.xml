@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">ls30917_ls30741_ls31293</string>
-    <string name="autentificar"> Autentificación </string>
+    <string name="autenticacion"> Autenticación </string>
     <string name="email"> Email</string>
     <string name="introemail"> Introduce el email</string>
     <string name="password"> Contraseña </string>
     <string name="intropassword"> Introduce la contraseña </string>
     <string name="entrar"> ENTRAR</string>
+    <string name="errorEmail"> Error! El correo o la contraseña no son correctos. Recuerda que la contraseña tienen que ser 6 digitos.</string>
 </resources>
