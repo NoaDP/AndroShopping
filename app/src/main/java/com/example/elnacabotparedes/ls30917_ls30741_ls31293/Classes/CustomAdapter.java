@@ -61,18 +61,18 @@ public class CustomAdapter extends ArrayAdapter<ProductModel>{
                     toast.show();
                 }
             });
-
+/*
             row.findViewById(R.id.see_product).setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view) {
+               public void onClick(View view) {
                     Intent intent = new Intent(getContext(), ProductActivity.class);
                     intent.putExtra("PRODUCT_NAME", getItem(position).getName());
                     intent.putExtra("PRODUCT_PRIZE", getItem(position).getPrize());
 
                     getContext().startActivity(intent);
-                }
-            });
 
+            });
+        }*/
             Log.d("DEBUG", "Row inflated correctly.");
         }
 

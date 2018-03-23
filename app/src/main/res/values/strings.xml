@@ -7,4 +7,7 @@
     <string name="see_product">Ver</string>
     <string name="add_cart">Añadir al carrito</string>
     <string name="product_added"> añadido al carrito</string>
+    <string name="password"> Contraseña</string>
+    <string name="user"> Usuario</string>
+    <string name="enter"> entrar</string>
 </resources>
