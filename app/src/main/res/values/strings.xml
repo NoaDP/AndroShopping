@@ -8,6 +8,12 @@
     <string name="add_cart">Añadir al carrito</string>
     <string name="product_added"> añadido al carrito</string>
     <string name="password"> Contraseña</string>
-    <string name="user"> Usuario</string>
+    <string name="informacion"> Información Básica</string>
     <string name="enter"> entrar</string>
+    <string name="appName"> AndroShopping</string>
+    <string name="descripcion">Descripción: </string>
+    <string name="productInfo"></string>
+    <string name="show">Ver Producto</string>
+
+
 </resources>
