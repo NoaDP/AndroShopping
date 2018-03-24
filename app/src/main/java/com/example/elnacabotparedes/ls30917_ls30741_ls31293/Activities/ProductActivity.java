@@ -2,6 +2,8 @@ package com.example.elnacabotparedes.ls30917_ls30741_ls31293.Activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.Intent;
 
@@ -28,6 +30,15 @@ public class ProductActivity extends AppCompatActivity {
         String descripcion = getIntent().getStringExtra("PRODUCT_DESC");
         TextView descProduct =(TextView)findViewById(R.id.decription);
         descProduct.setText(descripcion);
+
+        ImageView back = (ImageView)findViewById(R.id.backBar);
+        back.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View arg0) {
+                onBackPressed();
+            }
+        });
+
 
     }
 }

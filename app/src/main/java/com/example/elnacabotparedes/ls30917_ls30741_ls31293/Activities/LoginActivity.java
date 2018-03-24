@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-    
+
     public void Open(){
         Intent intent = new Intent(this, BuyActivity.class);
         startActivity(intent);
