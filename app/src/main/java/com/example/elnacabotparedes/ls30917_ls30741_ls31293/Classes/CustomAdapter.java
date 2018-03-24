@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.elnacabotparedes.ls30917_ls30741_ls31293.Activities.ProductActivity;
+import com.example.elnacabotparedes.ls30917_ls30741_ls31293.Activities.ResumActivity;
 import com.example.elnacabotparedes.ls30917_ls30741_ls31293.R;
 
 import java.util.ArrayList;
@@ -20,11 +21,14 @@ public class CustomAdapter extends ArrayAdapter<ProductModel>{
 
     private List<ProductModel> products;
     private Context context;
+    private ArrayList<CarritoModel> carritoModel ;
+
 
     public CustomAdapter(Context context) {
         super(context, R.layout.layout_product);
         this.products = new ArrayList<ProductModel>();
         populate();
+        this.carritoModel = new ArrayList<CarritoModel>();
     }
 
     private void populate() {
@@ -60,6 +64,8 @@ public class CustomAdapter extends ArrayAdapter<ProductModel>{
                     String text = getItem(position).getName().concat(" ".concat(getContext().getString(R.string.product_added)));
                     Toast toast = Toast.makeText(getContext(), text, Toast.LENGTH_SHORT);
                     toast.show();
+                    addCarrito(getItem(position));
+
                 }
             });
 
@@ -75,6 +81,16 @@ public class CustomAdapter extends ArrayAdapter<ProductModel>{
                 }
             });
 
+            row.findViewById(R.id.comprar).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(getContext(), ResumActivity.class);
+                    i.putExtra("CART", carritoModel);
+                    getContext().startActivity(i);
+                }
+            });
+
+
             Log.d("DEBUG", "Row inflated correctly.");
         }
 
@@ -88,5 +104,31 @@ public class CustomAdapter extends ArrayAdapter<ProductModel>{
         prize.setText(item.getPrize().toString().concat(" €"));
 
         return row;
+    }
+
+
+
+    // funcion que inserta el producto en el carrito de la compra
+    public void addCarrito(ProductModel item){
+        boolean trobat = false;
+
+        //busca si existe el producto ya en la compra
+        // si existe suma 1 la cantidad de ese producto
+        for( int i = 0; i < carritoModel.size(); i++){
+            if( carritoModel.get(i).getName().equals(item.getName())){
+                carritoModel.get(i).setCantidad(carritoModel.get(i).cantidad + 1);
+                trobat = true;
+            }
+        }
+
+        //en el caso de que no exista en el carrito lo incluye
+        if( trobat == false){
+            CarritoModel aux = new CarritoModel();
+            aux.name = item.getName();
+            aux.cantidad = 1;
+            aux.precio = item.getPrize();
+            carritoModel.add(aux);
+        }
+
     }
 }
