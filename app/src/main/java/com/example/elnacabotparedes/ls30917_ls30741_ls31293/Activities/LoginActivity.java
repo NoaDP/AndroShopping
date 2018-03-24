@@ -8,9 +8,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.elnacabotparedes.ls30917_ls30741_ls31293.Classes.UserModel;
 import com.example.elnacabotparedes.ls30917_ls30741_ls31293.R;
 
 public class LoginActivity extends AppCompatActivity {
+
+    private UserModel userModel;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         getSupportActionBar().hide();
         Button entrar = (Button) findViewById(R.id.entrar);
+        datosUsuario();
 
         entrar.setOnClickListener(new View.OnClickListener() {
               @Override
@@ -27,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
                   EditText ipassword = (EditText)findViewById(R.id.intropassword);
                   String password = ipassword.getText().toString();
 
-                  if(email.equals("admin@salleurl.edu") && password.equals("qwerty123")){
+                  if(email.equals(userModel.getUsername()) && password.equals(userModel.getPassword())){
                       Open();
                   }else{
                       Toast toast = Toast.makeText(getApplicationContext(), "FUNCIONA", Toast.LENGTH_SHORT);
@@ -37,6 +44,10 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+
+    private void datosUsuario(){
+        userModel = new UserModel("admin@salleurl.edu", "qwerty123");
+    }
 
     public void Open(){
         Intent intent = new Intent(this, BuyActivity.class);
