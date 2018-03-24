@@ -7,4 +7,15 @@
     <string name="see_product">Ver</string>
     <string name="add_cart">Añadir al carrito</string>
     <string name="product_added"> añadido al carrito</string>
+
+    <string name="autenticacion">Autenticacion</string>
+    <string name="email"> Email</string>
+    <string name="introemail"> Introduce el email</string>
+    <string name="password"> Contraseña</string>
+    <string name="intropassword"> Introduce contraseña</string>
+    <string name="entrar"> ENTRAR</string>
+
+
+
+
 </resources>
