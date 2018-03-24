@@ -19,4 +19,11 @@
     <string name="descripcion">Descripción: </string>
     <string name="productInfo"></string>
     <string name="show">Ver Producto</string>
+    <string name="resumen"> Resumen de la compra</string>
+    <string name="Q"> Q:</string>
+    <string name="num"> 1 </string>
+    <string name="acomulado"> 100€</string>
+    <string name="precioTotal"> Precio Total:  </string>
+    <string name="total"> 400€ </string>
+    <string name="aceptar"> Aceptar </string>
 </resources>

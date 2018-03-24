@@ -15,9 +15,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private UserModel userModel;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
