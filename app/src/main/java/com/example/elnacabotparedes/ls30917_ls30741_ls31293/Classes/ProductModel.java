@@ -7,10 +7,12 @@ package com.example.elnacabotparedes.ls30917_ls30741_ls31293.Classes;
 public class ProductModel {
     String name;
     Integer prize;
+    String description;
 
-    public ProductModel(String name, Integer prize) {
+    public ProductModel(String name, Integer prize, String description) {
         this.name = name;
         this.prize = prize;
+        this.description = description;
     }
 
     public String getName(){
@@ -20,4 +22,6 @@ public class ProductModel {
     public Integer getPrize(){
         return this.prize;
     }
+
+    public String getDescription() { return this.description; }
 }

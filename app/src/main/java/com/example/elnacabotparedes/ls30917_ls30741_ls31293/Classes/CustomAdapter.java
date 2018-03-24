@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.elnacabotparedes.ls30917_ls30741_ls31293.Activities.ProductActivity;
 import com.example.elnacabotparedes.ls30917_ls30741_ls31293.R;
 
 import java.util.ArrayList;
@@ -28,12 +29,12 @@ public class CustomAdapter extends ArrayAdapter<ProductModel>{
 
     private void populate() {
         this.products.clear();
-        this.products.add(new ProductModel("Xbox", 199));
-        this.products.add(new ProductModel("Sony", 299));
-        this.products.add(new ProductModel("Mac book pro", 1990));
-        this.products.add(new ProductModel("Acer P400", 399));
-        this.products.add(new ProductModel("Nexus 4", 200));
-        this.products.add(new ProductModel("iPad 4", 399));
+        this.products.add(new ProductModel("Xbox", 199,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id venenatis ipsum. Fusce molestie id metus ut ullamcorper. Praesent consequat tortor risus. Phasellus mollis lacus purus, nec lacinia tortor sodales in. Duis a lectus at eros ornare sollicitudin. Vivamus gravida erat nisi, in congue tortor semper nec. In a imperdiet metus. Pellentesque facilisis feugiat lacus, vitae mollis ligula placerat eget. Phasellus et sem accumsan, lacinia nisi at, tristique ante. Nullam aliquet purus quis quam interdum placerat. Curabitur sit amet ultrices orci. Etiam lectus sapien, semper quis venenatis eu, ultricies in velit. Nunc convallis sem nec diam elementum molestie. Duis vulputate sodales malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc vulputate felis iaculis, lacinia urna ut, sollicitudin mauris."));
+        this.products.add(new ProductModel("Sony", 299,"lorem ipsum blablablalbalbalblablablablablablablalb"));
+        this.products.add(new ProductModel("Mac book pro", 1990,"lorem ipsum blablablalbalbalblablablablablablablalb"));
+        this.products.add(new ProductModel("Acer P400", 399,"lorem ipsum blablablalbalbalblablablablablablablalb"));
+        this.products.add(new ProductModel("Nexus 4", 200,"lorem ipsum blablablalbalbalblablablablablablablalb"));
+        this.products.add(new ProductModel("iPad 4", 399,"lorem ipsum blablablalbalbalblablablablablablablalb"));
     }
     
     public int getCount() {
@@ -68,6 +69,7 @@ public class CustomAdapter extends ArrayAdapter<ProductModel>{
                     Intent intent = new Intent(getContext(), ProductActivity.class);
                     intent.putExtra("PRODUCT_NAME", getItem(position).getName());
                     intent.putExtra("PRODUCT_PRIZE", getItem(position).getPrize());
+                    intent.putExtra("PRODUCT_DESC", getItem(position).getDescription());
 
                     getContext().startActivity(intent);
                 }

@@ -7,15 +7,16 @@
     <string name="see_product">Ver</string>
     <string name="add_cart">Añadir al carrito</string>
     <string name="product_added"> añadido al carrito</string>
-
     <string name="autenticacion">Autenticacion</string>
     <string name="email"> Email</string>
     <string name="introemail"> Introduce el email</string>
-    <string name="password"> Contraseña</string>
     <string name="intropassword"> Introduce contraseña</string>
     <string name="entrar"> ENTRAR</string>
-
-
-
-
+    <string name="password"> Contraseña</string>
+    <string name="informacion"> Información Básica</string>
+    <string name="enter"> entrar</string>
+    <string name="appName"> AndroShopping</string>
+    <string name="descripcion">Descripción: </string>
+    <string name="productInfo"></string>
+    <string name="show">Ver Producto</string>
 </resources>
