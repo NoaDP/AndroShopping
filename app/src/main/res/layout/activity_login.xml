@@ -19,6 +19,7 @@
         android:layout_margin="10dp"/>
 
     <EditText
+        android:id="@+id/introemail"
         android:layout_height="wrap_content"
         android:layout_width="300dp"
         android:inputType="text"
@@ -33,6 +34,7 @@
         android:layout_margin="10dp"/>
 
     <EditText
+        android:id="@+id/intropassword"
         android:layout_height="wrap_content"
         android:layout_width="300dp"
         android:inputType="textPassword"
