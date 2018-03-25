@@ -62,4 +62,5 @@
     <string name="error_general"> ¡Ups! Parece que ha habido un error a la hora de iniciar sesión, revisa usuario y contraseña</string>
     <string name="error_email"> ¡Ups! Te falta llenar el campo: email</string>
     <string name="error_password"> ¡Ups! Te falta llenar el campo: contraseña </string>
+    <string name="error_format"> ¡Ups! Parece que el formato no es el correcto, tendría que ser como el siguiente: "ejemplo@dominio.com"</string>
 </resources>

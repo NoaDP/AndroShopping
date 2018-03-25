@@ -11,9 +11,14 @@ import android.widget.Toast;
 import com.example.elnacabotparedes.ls30917_ls30741_ls31293.Classes.UserModel;
 import com.example.elnacabotparedes.ls30917_ls30741_ls31293.R;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class LoginActivity extends AppCompatActivity {
 
     private UserModel userModel;
+    private static final String PATTERN_EMAIL = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+            + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                       Open();
                   }else{
                       // funcion que controla errores a la hora de iniciar sesion
-                      controlErrores(email,password);
+                      errorsMessage(email,password);
                   }
               }
         });
@@ -65,38 +70,54 @@ public class LoginActivity extends AppCompatActivity {
 
 
     // Funcion que controla posibles erroes a la hora de introducir email y contraseña
-    public void controlErrores(String email, String password){
+    public void errorsMessage(String email, String password){
 
         // comprueba que han llenado el campo de email
         if(email.length() != 0) {
 
-            // comprueba que han llenado el campo de password
-            if( password.length() != 0){
+            //comprueba el formato del email sea el correcto (ejemplo@dominio.com)
+            if(validateEmail(email)){
 
-                // comprueba que el tamaño de la contraseña sea de minimo 6
-                if (password.length() < 6) {
-                    
-                    // Cogemos la el parametro de string.xml para el mensaje correspondiente
-                    String text = getResources().getString(R.string.error_caracters);
-                    Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
-                    toast.show();
+                // comprueba que han llenado el campo de password
+                if( password.length() != 0){
 
-                } else {
-                    // Hay error tanto en el email como en el password ( error general)
-                    String text = getResources().getString(R.string.error_general);
+                    // comprueba que el tamaño de la contraseña sea de minimo 6
+                    if (password.length() < 6) {
+
+                        // Cogemos la el parametro de string.xml para el mensaje correspondiente
+                        String text = getResources().getString(R.string.error_caracters);
+                        Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
+                        toast.show();
+
+                    } else {
+                        // Hay error tanto en el email como en el password ( error general)
+                        String text = getResources().getString(R.string.error_general);
+                        Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
+                        toast.show();
+                    }
+                }else{
+                    String text = getResources().getString(R.string.error_password);
                     Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
                     toast.show();
                 }
             }else{
-                String text = getResources().getString(R.string.error_password);
+                String text = getResources().getString(R.string.error_format);
                 Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
                 toast.show();
             }
+
         }else{
             String text = getResources().getString(R.string.error_email);
             Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
             toast.show();
         }
+    }
+
+
+    public boolean validateEmail(String email){
+        Pattern pattern = Pattern.compile(PATTERN_EMAIL);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
     }
 
 }
