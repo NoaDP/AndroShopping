@@ -88,7 +88,6 @@ public class LoginActivity extends AppCompatActivity {
                         String text = getResources().getString(R.string.error_caracters);
                         Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
                         toast.show();
-
                     } else {
                         // Hay error tanto en el email como en el password ( error general)
                         String text = getResources().getString(R.string.error_general);
@@ -105,7 +104,6 @@ public class LoginActivity extends AppCompatActivity {
                 Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
                 toast.show();
             }
-
         }else{
             String text = getResources().getString(R.string.error_email);
             Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
@@ -113,7 +111,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-
+    //valida el email con el formato correcto
     public boolean validateEmail(String email){
         Pattern pattern = Pattern.compile(PATTERN_EMAIL);
         Matcher matcher = pattern.matcher(email);
