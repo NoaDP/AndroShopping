@@ -19,8 +19,7 @@ public class ResumActivity extends AppCompatActivity {
         setContentView(R.layout.activity_resum);
 
         ListView listView = (ListView)findViewById(R.id.listView);
-        Intent i = getIntent();
-        ArrayList<String> carrito = i.getStringArrayListExtra("CART");
+
 
         ResumAdapter resumAdapter = new ResumAdapter(getApplicationContext());
         listView.setAdapter(resumAdapter);

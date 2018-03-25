@@ -36,17 +36,6 @@ public class ResumAdapter extends ArrayAdapter<CarritoModel> {
 
 
 
-        /*ProductModel item = getItem(position);
-        row.setTag(item);
-
-        TextView name = (TextView)row.findViewById(R.id.product_name);
-        name.setText(item.getName());
-
-        TextView prize = (TextView)row.findViewById(R.id.product_prize);
-        prize.setText(item.getPrize().toString().concat(" €"));*/
-
-
-
 
         return row;
     }
