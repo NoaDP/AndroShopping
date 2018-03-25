@@ -1,55 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_height="fill_parent"
-    android:layout_width="fill_parent"
-    android:paddingBottom="16dp"
-    android:weightSum="1"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     >
 
-    <TextView
 
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/enter"
+        android:id="@+id/autenticacion"
+        android:text="@string/authentication"
         android:textSize="30sp"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"/>
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:text="@string/email"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/autenticacion"
+        />
 
     <EditText
         android:id="@+id/introemail"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="300dp"
-        android:inputType="text"
-        android:layout_gravity="center"/>
+        android:hint="@string/enter_email"
+        android:layout_below="@id/email"
+        />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/password"
-        android:textSize="30sp"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"/>
+        android:layout_below="@id/introemail"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        />
 
     <EditText
         android:id="@+id/intropassword"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="300dp"
+        android:hint="@string/enter_password"
+        android:layout_below="@id/password"
         android:inputType="textPassword"
-        android:layout_gravity="center"/>
+        />
 
-    <View
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight ="1">
-    </View>
 
     <Button
         android:id="@+id/entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enter"
-        android:layout_gravity="right"/>
-</LinearLayout>
+        android:text="@string/enter_lowercase"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        />
+
+
+
+</RelativeLayout>

@@ -30,7 +30,6 @@ public class SplashActivity extends AppCompatActivity{
             @Override
             public void run() {
                 startApp();
-
                 //matamos la ventana de splash
                 finish();
             }
@@ -39,7 +38,6 @@ public class SplashActivity extends AppCompatActivity{
         Timer timer = new Timer();
         timer.schedule(task, 2000);
     }
-
 
     //llamamos a la actividad de login para iniciar la app
     public void startApp (){

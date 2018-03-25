@@ -1,17 +1,23 @@
 package com.example.elnacabotparedes.ls30917_ls30741_ls31293.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.elnacabotparedes.ls30917_ls30741_ls31293.Classes.CustomAdapter;
+import com.example.elnacabotparedes.ls30917_ls30741_ls31293.Classes.ProductAdapter;
+import com.example.elnacabotparedes.ls30917_ls30741_ls31293.Classes.ProductModel;
 import com.example.elnacabotparedes.ls30917_ls30741_ls31293.R;
+
+import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by diego on 23/03/2018.
@@ -19,6 +25,7 @@ import com.example.elnacabotparedes.ls30917_ls30741_ls31293.R;
 
 public class BuyActivity extends AppCompatActivity {
 
+    private ProductAdapter productAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,9 +34,11 @@ public class BuyActivity extends AppCompatActivity {
 
         ListView listView = (ListView)findViewById(R.id.listView);
 
-        CustomAdapter customAdapter = new CustomAdapter(this.getApplicationContext());
+        productAdapter = new ProductAdapter(this.getApplicationContext());
 
-        listView.setAdapter(customAdapter);
+        listView.setAdapter(productAdapter);
+
+        Button buyButton = (Button)findViewById(R.id.buy);
 
         ImageView back = (ImageView)findViewById(R.id.backBar);
         back.setOnClickListener(new View.OnClickListener() {
@@ -39,5 +48,20 @@ public class BuyActivity extends AppCompatActivity {
             }
         });
 
+        buyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CartActivity.class);
+                List<ProductModel> products = productAdapter.getBoughtProducts();
+                intent.putExtra("PRODUCTS", (Serializable) products);
+                startActivity(intent);
+            }
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        productAdapter.resetProducts();
     }
 }
