@@ -16,18 +16,17 @@ public class ProductActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
 
-        Intent i = getIntent();
-        String nombre = getIntent().getStringExtra("PRODUCT_NAME");
-        TextView producto =(TextView)findViewById(R.id.product);
-        producto.setText(nombre);
+        String name = getIntent().getStringExtra("PRODUCT_NAME");
+        TextView product =(TextView)findViewById(R.id.product);
+        product.setText(name);
 
-        Integer precio = getIntent().getIntExtra("PRODUCT_PRIZE", 99);
-        TextView precioProducto =(TextView)findViewById(R.id.prizeRes);
-        precioProducto.setText(String.valueOf(precio));
+        Integer prize = getIntent().getIntExtra("PRODUCT_PRIZE", 99);
+        TextView productPrize =(TextView)findViewById(R.id.prizeRes);
+        productPrize.setText(String.valueOf(prize).concat(" €"));
 
-        String descripcion = getIntent().getStringExtra("PRODUCT_DESC");
-        TextView descProduct =(TextView)findViewById(R.id.decription);
-        descProduct.setText(descripcion);
+        String description = getIntent().getStringExtra("PRODUCT_DESC");
+        TextView productDescription =(TextView)findViewById(R.id.decription);
+        productDescription.setText(description);
 
     }
 }

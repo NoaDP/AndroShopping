@@ -6,24 +6,56 @@
     <string name="prize_example">99€</string>
     <string name="see_product">Ver</string>
     <string name="add_cart">Añadir al carrito</string>
-    <string name="product_added"> añadido al carrito</string>
-    <string name="autenticacion">Autenticacion</string>
+    <string name="product_added">añadido al carrito</string>
+    <string name="xbox_description">Xbox 360 es la segunda videoconsola de sobremesa de la marca Xbox
+        producida por Microsoft. Fue desarrollada en colaboración con IBM y ATI y lanzada en América
+        del Sur, América del Norte, Japón, Europa y Australia entre 2005 y 2006. Su servicio Xbox
+        Live (de pago) permite a los jugadores competir en línea y descargar contenidos como juegos
+        arcade, demos, tráilers, programas de televisión y películas. La Xbox 360 es la sucesora
+        directa de la Xbox, y compitió con la PlayStation 3 de Sony y Wii de Nintendo como parte de
+        las videoconsolas de séptima generación."</string>
+    <string name="sony_description">PlayStation 4 es la cuarta videoconsola del modelo PlayStation.​
+        Forma parte de las videoconsolas de octava generación. Fue anunciada oficialmente el 20 de
+        febrero de 2013 en el evento PlayStation Meeting 2013, aunque el diseño de la consola no fue
+        presentado hasta el 10 de junio en el E3 2013.10​ Es la sucesora de la PlayStation 3 y compite
+        con Wii U y Switch de Nintendo y Xbox One de Microsoft. Su lanzamiento fue el 15 de noviembre
+        de 2013 en Estados Unidos y en Europa y Sudamérica fue el 29 de noviembre de 2013,​ mientras
+        que en Japón fue el 22 de febrero de 2014.</string>
+    <string name="mac_description">Es más rápido y potente que antes, pero más fino y ligero que nunca. Tiene la
+        pantalla con más color y brillo jamás vista en un portátil Mac. Y viene con la Touch Bar, una barra
+        de vidrio Multi-Touch integrada en el teclado para que siempre tengas a mano las herramientas que
+        necesitas. El MacBook Pro es el resultado de nuestras ideas más innovadoras. Y puede hacer realidad
+        las tuyas.</string>
+    <string name="acer_description">Acer P400, neoTouch. Diagonal de la pantalla: 8,13 cm (3.2"),
+        Resolución de la pantalla: 320 x 480 Pixeles. Frecuencia del procesador: 0,6 GHz. Tamaño
+        máximo de tarjeta de memoria: 32 GB, Memoria interna: 0 MB. Resolución de cámara: 2048 x
+        1536 Pixeles, Tipo de sensor: CMOS. SIM card capability: Single SIM, Estándares 2G: EDGE,
+        GSM, Estándares 3G: HSDPA</string>
+    <string name="nexus_description">El Nexus 4 es un teléfono inteligente de gama alta desarrollado por Google
+        en la colaboración con LG. Es la cuarta generación de la gama Nexus. Se caracteriza por poseer una
+        cámara de 8 MP, pantalla IPS LCD capacitiva y procesador de cuatro núcleos.</string>
+    <string name="iPad_description">El iPad de 4ª generación es una tableta diseñada, desarrollada y
+        comercializada por Apple Inc, que se ha retomado sus ventas sustituyendo el famoso iPad 2. Fue
+        anunciado el 23 de octubre de 2012 como la cuarta generación de la línea iPad, en reemplazo de la
+        IPad de tercera generación y distribuida a partir del 2 de noviembre de 2012, junto al iPad mini.</string>
+    <string name="authentication">Autenticacion</string>
     <string name="email"> Email</string>
-    <string name="introemail"> Introduce el email</string>
-    <string name="intropassword"> Introduce contraseña</string>
-    <string name="entrar"> ENTRAR</string>
+    <string name="enter_email"> Introduce el email</string>
+    <string name="enter_password"> Introduce contraseña</string>
+    <string name="enter_uppercase"> ENTRAR</string>
     <string name="password"> Contraseña</string>
-    <string name="informacion"> Información Básica</string>
-    <string name="enter"> entrar</string>
-    <string name="appName"> AndroShopping</string>
-    <string name="descripcion">Descripción: </string>
-    <string name="productInfo"></string>
+    <string name="information"> Información Básica</string>
+    <string name="enter_lowercase"> entrar</string>
+    <string name="splash_name"> AndroShopping</string>
+    <string name="description">Descripción: </string>
+    <string name="product_info"></string>
     <string name="show">Ver Producto</string>
-    <string name="resumen"> Resumen de la compra</string>
-    <string name="Q"> Q:</string>
-    <string name="num"> 1 </string>
-    <string name="acomulado"> 100€</string>
-    <string name="precioTotal"> Precio Total:  </string>
+    <string name="summary"> Resumen de la compra</string>
+    <string name="quantity"> Q:</string>
+    <string name="number"> 1 </string>
+    <string name="accumulated"> 100€</string>
+    <string name="total_prize"> Precio Total:  </string>
     <string name="total"> 400€ </string>
-    <string name="aceptar"> Aceptar </string>
+    <string name="accept"> Aceptar </string>
+    <string name="success_buy">Compra realizada correctamente.</string>
 </resources>

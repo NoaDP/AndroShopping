@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/buy"
+            android:text="@string/summary"
             android:layout_marginLeft="5dp"
             android:textSize="20sp"/>
 
@@ -40,14 +40,41 @@
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.8">
+        android:layout_weight="0.7">
     </ListView>
 
-    <Button
-        android:id="@+id/buy"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"
-        android:text="@string/buy"/>
 
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_prize"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:id="@+id/accumulated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total"
+            android:text="@string/total"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/accept"
+            android:text="@string/accept"
+            android:layout_below="@id/total"
+            />
+
+    </RelativeLayout>
 </LinearLayout>
