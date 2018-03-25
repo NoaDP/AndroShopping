@@ -31,11 +31,11 @@ public class LoginActivity extends AppCompatActivity {
                   EditText ipassword = (EditText)findViewById(R.id.intropassword);
                   String password = ipassword.getText().toString();
 
+
                   if(email.equals(userModel.getUsername()) && password.equals(userModel.getPassword())){
                       Open();
                   }else{
-                      Toast toast = Toast.makeText(getApplicationContext(), "FUNCIONA", Toast.LENGTH_SHORT);
-                      toast.show();
+                      controlErrores(email,password);
                   }
               }
         });
@@ -48,6 +48,30 @@ public class LoginActivity extends AppCompatActivity {
     public void Open(){
         Intent intent = new Intent(this, BuyActivity.class);
         startActivity(intent);
+    }
+
+    public void controlErrores(String email, String password){
+        if(email.length() != 0) {  // comprueba que han llenado el campo de email
+            if( password.length() != 0){  // comprueba que han llenado el campo de password
+                if (password.length() < 6) {  // comprueba que el tamaño de la contraseña sea de minimo 6
+                    String text = getResources().getString(R.string.errorCaracters);
+                    Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
+                    toast.show();
+                } else {  // hay error tanto en el email como en el password ( error general)
+                    String text = getResources().getString(R.string.errorGeneral);
+                    Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
+                    toast.show();
+                }
+            }else{
+                String text = getResources().getString(R.string.errorPassword);
+                Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
+                toast.show();
+            }
+        }else{
+            String text = getResources().getString(R.string.errorEmail);
+            Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
+            toast.show();
+        }
     }
 
 }
