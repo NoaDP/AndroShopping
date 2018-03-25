@@ -54,21 +54,21 @@ public class LoginActivity extends AppCompatActivity {
         if(email.length() != 0) {  // comprueba que han llenado el campo de email
             if( password.length() != 0){  // comprueba que han llenado el campo de password
                 if (password.length() < 6) {  // comprueba que el tamaño de la contraseña sea de minimo 6
-                    String text = getResources().getString(R.string.errorCaracters);
+                    String text = getResources().getString(R.string.error_caracters);
                     Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
                     toast.show();
                 } else {  // hay error tanto en el email como en el password ( error general)
-                    String text = getResources().getString(R.string.errorGeneral);
+                    String text = getResources().getString(R.string.error_general);
                     Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
                     toast.show();
                 }
             }else{
-                String text = getResources().getString(R.string.errorPassword);
+                String text = getResources().getString(R.string.error_password);
                 Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
                 toast.show();
             }
         }else{
-            String text = getResources().getString(R.string.errorEmail);
+            String text = getResources().getString(R.string.error_email);
             Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
             toast.show();
         }
