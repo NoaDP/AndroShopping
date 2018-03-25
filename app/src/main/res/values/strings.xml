@@ -8,7 +8,7 @@
     <string name="add_cart">Añadir al carrito</string>
     <string name="password"> Contraseña</string>
     <string name="informacion"> Información Básica</string>
-    <string name="enter"> entrar</string>
+    <string name="enter"> Entrar</string>
     <string name="appName"> AndroShopping</string>
     <string name="descripcion">Descripción: </string>
     <string name="productInfo"></string>
@@ -45,7 +45,7 @@
         comercializada por Apple Inc, que se ha retomado sus ventas sustituyendo el famoso iPad 2. Fue
         anunciado el 23 de octubre de 2012 como la cuarta generación de la línea iPad, en reemplazo de la
         IPad de tercera generación y distribuida a partir del 2 de noviembre de 2012, junto al iPad mini.</string>
-    <string name="authentication">Autenticacion</string>
+    <string name="authentication">Autenticación</string>
     <string name="email"> Email</string>
     <string name="enter_email"> Introduce el email</string>
     <string name="enter_password"> Introduce contraseña</string>
