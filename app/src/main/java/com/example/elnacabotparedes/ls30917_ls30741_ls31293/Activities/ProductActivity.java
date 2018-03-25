@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.content.Intent;
 
@@ -52,11 +50,11 @@ public class ProductActivity extends AppCompatActivity {
         //muestra la descripcion del producto
         descProduct.setText(descripcion);
 
-        //cargamos la descripcion del producto
+        //cargamos la imagen del producto
         Integer img = getIntent().getIntExtra("PRODUCT_IMG", 000);
         ImageView imgProduct = (ImageView) findViewById(R.id.prodImg);
 
-        //muestra la descripcion del producto
+        //muestra la imagen del producto
         imgProduct.setImageResource(img);
 
 
