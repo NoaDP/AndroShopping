@@ -1,22 +1,24 @@
 package com.example.elnacabotparedes.ls30917_ls30741_ls31293.Classes;
 
-/**
- * Created by elnacabotparedes on 24/3/18.
- */
+
+//Clase UserModel para guardar la informacion del usuario para que se pueda iniciar sesion
 
 public class UserModel {
-    String username;
-    String password;
+    String username;   // campo del email (admin@salleurl.edu)
+    String password;   // campo de la contraseña (qwerty123)
 
+    //constuctor
     public UserModel(String username, String password){
         this.username = username;
         this.password = password;
     }
 
+    //recuperar el nombre usuario
     public String getUsername(){
         return this.username;
     }
 
+    //recuperar el la contraseña
     public String getPassword(){
         return this.password;
     }

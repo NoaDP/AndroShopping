@@ -40,7 +40,7 @@
         IPad de tercera generación y distribuida a partir del 2 de noviembre de 2012, junto al iPad mini.</string>
     <string name="authentication">Autenticacion</string>
     <string name="email"> Email</string>
-    <string name="enter_email"> Introduce el email</string>
+    <string name="enter_email"> ejemplo@dominio.com </string>
     <string name="enter_password"> Introduce contraseña</string>
     <string name="enter_uppercase"> ENTRAR</string>
     <string name="password"> Contraseña</string>
