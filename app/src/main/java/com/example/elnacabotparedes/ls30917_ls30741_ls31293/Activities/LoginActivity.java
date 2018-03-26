@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         // recuperamos  el boton enter
-        Button enterButton = (Button) findViewById(R.id.entrar);
+        Button enterButton = (Button) findViewById(R.id.enter);
         fillUserData();
 
         // controlamos la accion de la ventana a partir de que se clica el 'entrar'
@@ -37,21 +37,30 @@ public class LoginActivity extends AppCompatActivity {
               public void onClick(View view) {
 
                   // recuperamos la informacion tanto en el campo de email, como de contraseña
-                  EditText iemail = (EditText)findViewById(R.id.introemail);
-                  String email = iemail.getText().toString();
-                  EditText ipassword = (EditText)findViewById(R.id.intropassword);
-                  String password = ipassword.getText().toString();
+                  EditText email = (EditText)findViewById(R.id.enter_email);
+                  String emailString = email.getText().toString();
+                  EditText password = (EditText)findViewById(R.id.enter_password);
+                  String passwordString = password.getText().toString();
 
                   // comprobamos si ha introducido correctamente el email y la contraseña
-                  if(email.equals(userModel.getUsername()) && password.equals(userModel.getPassword())){
+                  if(emailString.equals(userModel.getUsername()) && passwordString.equals(userModel.getPassword())){
                       // funcion que nos deriva a la pagina de buyActivity
                       Open();
                   }else{
                       // funcion que controla errores a la hora de iniciar sesion
-                      errorsMessage(email,password);
+                      errorsMessage(emailString, passwordString);
                   }
               }
         });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        EditText email = (EditText)findViewById(R.id.enter_email);
+        email.setText("");
+        EditText password = (EditText)findViewById(R.id.enter_password);
+        password.setText("");
     }
 
 
@@ -85,7 +94,7 @@ public class LoginActivity extends AppCompatActivity {
                     if (password.length() < 6) {
 
                         // Cogemos la el parametro de string.xml para el mensaje correspondiente
-                        String text = getResources().getString(R.string.error_caracters);
+                        String text = getResources().getString(R.string.error_characters);
                         Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
                         toast.show();
                     } else {

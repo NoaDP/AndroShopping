@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">ls30917_ls30741_ls31293</string>
+    <string name="appName">AndroShopping</string>
     <string name="buy">Buy</string>
     <string name="product">Product</string>
     <string name="prize_text">Total price: </string>
@@ -7,11 +8,8 @@
     <string name="see_product">Show</string>
     <string name="add_cart">Add to cart</string>
     <string name="password"> Password </string>
-    <string name="informacion"> Basic information</string>
     <string name="enter"> Enter</string>
-    <string name="appName"> AndroShopping</string>
-    <string name="descripcion">Description: </string>
-    <string name="productInfo"></string>
+    <string name="description_tag">Description: </string>
     <string name="show">Show product</string>
     <string name="product_added">added to the cart</string>
     <string name="xbox_description">The Xbox is a home video game console and the first installment
@@ -47,7 +45,7 @@
         films, music, computer games, presentations and web content. Like the iPad 2 and the third-generation iPad, it has
         been supported by five major iOS releases, in this case iOS 6, 7, 8, 9, and 10. iOS 11, which was released on 19
         September 2017, does not have support for the fourth-generation iPad because of hardware limitations.</string>
-    <string name="authentication">Autentication</string>
+    <string name="authentication">Authentication</string>
     <string name="email"> Email</string>
     <string name="enter_email"> Enter email</string>
     <string name="enter_password"> Enter password</string>
@@ -55,8 +53,7 @@
     <string name="information"> Basic information</string>
     <string name="enter_lowercase"> enter</string>
     <string name="splash_name"> AndroShopping</string>
-    <string name="description">Description: </string>
-    <string name="product_info"></string>
+    <string name="product_info"> Information </string>
     <string name="summary"> Purchase summary</string>
     <string name="quantity"> Q:</string>
     <string name="number"> 1 </string>
@@ -64,5 +61,11 @@
     <string name="total_prize"> Total Price:  </string>
     <string name="total"> 400€ </string>
     <string name="accept"> Accept </string>
-    <string name="success_buy">Shopping success</string>
+    <string name="success_buy">Shopping successfully done.</string>
+    <string name="no_products_buy">No items found in your cart.</string>
+    <string name="error_characters"> Password must have at least six characters. </string>
+    <string name="error_general"> Ups! Seems to be an error logging in, check the username and password. </string>
+    <string name="error_email"> Ups! Email field cannot be empty.</string>
+    <string name="error_password"> Ups! Password field cannot be empty.</string>
+    <string name="error_format"> Ups! Seems that form is not correct. Try one like the following: "example@dominium.com".</string>
 </resources>

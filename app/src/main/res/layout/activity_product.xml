@@ -45,7 +45,7 @@
             android:layout_below="@id/upperBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/informacion"
+            android:text="@string/information"
             android:textSize="30sp"
             android:textStyle="bold"
             android:layout_margin="10dp"/>
@@ -64,22 +64,22 @@
             android:layout_below="@id/product"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/descripcion"
+            android:text="@string/description_tag"
             android:textSize="20sp"
             android:layout_margin="10dp"/>
 
         <TextView
-            android:id="@+id/decription"
+            android:id="@+id/description"
             android:layout_below="@id/prodDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/productInfo"
+            android:text="@string/product_info"
             android:textSize="20sp"
             android:layout_margin="10dp"/>
 
         <ImageView
             android:id="@+id/prodImg"
-            android:layout_below="@id/decription"
+            android:layout_below="@id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_launcher_background"/>

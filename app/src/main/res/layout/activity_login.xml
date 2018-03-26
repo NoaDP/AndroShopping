@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/autenticacion"
+        android:id="@+id/authentication"
         android:text="@string/authentication"
         android:textSize="30sp"
         android:gravity="center"
@@ -24,11 +24,11 @@
         android:text="@string/email"
         android:textSize="25sp"
         android:layout_marginTop="25dp"
-        android:layout_below="@id/autenticacion"
+        android:layout_below="@id/authentication"
         />
 
     <EditText
-        android:id="@+id/introemail"
+        android:id="@+id/enter_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_email"
@@ -40,13 +40,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/password"
-        android:layout_below="@id/introemail"
+        android:layout_below="@id/enter_email"
         android:textSize="25sp"
         android:layout_marginTop="25dp"
         />
 
     <EditText
-        android:id="@+id/intropassword"
+        android:id="@+id/enter_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_password"
@@ -56,7 +56,7 @@
 
 
     <Button
-        android:id="@+id/entrar"
+        android:id="@+id/enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enter_lowercase"

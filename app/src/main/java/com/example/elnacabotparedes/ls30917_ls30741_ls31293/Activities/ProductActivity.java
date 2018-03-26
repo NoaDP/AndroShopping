@@ -41,11 +41,11 @@ public class ProductActivity extends AppCompatActivity {
         TextView precioProducto = (TextView) findViewById(R.id.prizeRes);
 
         //mostramos el precio del producto
-        precioProducto.setText(String.valueOf(precio));
+        precioProducto.setText(String.valueOf(precio).concat(" €"));
 
         //cargamos la descripcion del producto
         String descripcion = getIntent().getStringExtra("PRODUCT_DESC");
-        TextView descProduct = (TextView) findViewById(R.id.decription);
+        TextView descProduct = (TextView) findViewById(R.id.description);
 
         //muestra la descripcion del producto
         descProduct.setText(descripcion);
