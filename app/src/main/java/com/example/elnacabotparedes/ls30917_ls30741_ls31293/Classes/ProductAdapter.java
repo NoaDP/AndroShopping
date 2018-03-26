@@ -25,17 +25,17 @@ public class ProductAdapter extends ArrayAdapter<ProductModel>{
         super(context, R.layout.layout_product);
         this.products = new ArrayList<ProductModel>();
 
-        populate();
+        populate(context);
     }
 
-    private void populate() {
+    private void populate(Context context) {
         this.products.clear();
-        this.products.add(new ProductModel("Xbox", 199, getContext().getString(R.string.xbox_description)));
-        this.products.add(new ProductModel("Sony", 299,getContext().getString(R.string.sony_description)));
-        this.products.add(new ProductModel("Mac book pro", 1990,getContext().getString(R.string.mac_description)));
-        this.products.add(new ProductModel("Acer P400", 399,getContext().getString(R.string.acer_description)));
-        this.products.add(new ProductModel("Nexus 4", 200,getContext().getString(R.string.nexus_description)));
-        this.products.add(new ProductModel("iPad 4", 399,getContext().getString(R.string.iPad_description)));
+        this.products.add(new ProductModel("Xbox", 199,context.getString(R.string.xbox_description), R.mipmap.xbox));
+        this.products.add(new ProductModel("Sony", 299,context.getString(R.string.sony_description), R.mipmap.ps4));
+        this.products.add(new ProductModel("Mac book pro", 1990,context.getString(R.string.mac_description), R.mipmap.mac));
+        this.products.add(new ProductModel("Acer P400", 399,context.getString(R.string.acer_description), R.mipmap.acer));
+        this.products.add(new ProductModel("Nexus 4", 200,context.getString(R.string.nexus_description), R.mipmap.nexus));
+        this.products.add(new ProductModel("iPad 4", 399,context.getString(R.string.iPad_description), R.mipmap.ipad));
     }
     
     public int getCount() {
@@ -72,6 +72,7 @@ public class ProductAdapter extends ArrayAdapter<ProductModel>{
                     intent.putExtra("PRODUCT_NAME", getItem(position).getName());
                     intent.putExtra("PRODUCT_PRIZE", getItem(position).getPrize());
                     intent.putExtra("PRODUCT_DESC", getItem(position).getDescription());
+                    intent.putExtra("PRODUCT_IMG", getItem(position).getImage());
 
                     getContext().startActivity(intent);
                 }

@@ -6,6 +6,13 @@
     <string name="prize_example">99€</string>
     <string name="see_product">Ver</string>
     <string name="add_cart">Añadir al carrito</string>
+    <string name="password"> Contraseña</string>
+    <string name="informacion"> Información Básica</string>
+    <string name="enter"> Entrar</string>
+    <string name="appName"> AndroShopping</string>
+    <string name="descripcion">Descripción: </string>
+    <string name="productInfo"></string>
+    <string name="show">Ver Producto</string>
     <string name="product_added">añadido al carrito</string>
     <string name="xbox_description">Xbox 360 es la segunda videoconsola de sobremesa de la marca Xbox
         producida por Microsoft. Fue desarrollada en colaboración con IBM y ATI y lanzada en América
@@ -38,18 +45,16 @@
         comercializada por Apple Inc, que se ha retomado sus ventas sustituyendo el famoso iPad 2. Fue
         anunciado el 23 de octubre de 2012 como la cuarta generación de la línea iPad, en reemplazo de la
         IPad de tercera generación y distribuida a partir del 2 de noviembre de 2012, junto al iPad mini.</string>
-    <string name="authentication">Autenticacion</string>
+    <string name="authentication">Autenticación</string>
     <string name="email"> Email</string>
-    <string name="enter_email"> ejemplo@dominio.com </string>
+    <string name="enter_email"> Introduce el email</string>
     <string name="enter_password"> Introduce contraseña</string>
     <string name="enter_uppercase"> ENTRAR</string>
-    <string name="password"> Contraseña</string>
     <string name="information"> Información Básica</string>
     <string name="enter_lowercase"> entrar</string>
     <string name="splash_name"> AndroShopping</string>
     <string name="description">Descripción: </string>
     <string name="product_info"></string>
-    <string name="show">Ver Producto</string>
     <string name="summary"> Resumen de la compra</string>
     <string name="quantity"> Q:</string>
     <string name="number"> 1 </string>

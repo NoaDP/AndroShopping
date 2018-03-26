@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -51,6 +52,14 @@ public class CartActivity extends AppCompatActivity {
                     products.clear();
                 }
                 finish();
+            }
+        });
+
+        ImageView back = (ImageView)findViewById(R.id.backBar);
+        back.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View arg0) {
+                onBackPressed();
             }
         });
     }

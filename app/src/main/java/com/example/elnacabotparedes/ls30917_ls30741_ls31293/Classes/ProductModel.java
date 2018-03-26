@@ -10,14 +10,15 @@ public class ProductModel implements Serializable {
     Integer prize;          // precio del producto
     String description;     // descripcion del producto
     Integer amount;         // cantidad del producto que quiere el cliente
-
+    Integer imgpath;        // imagen del producto
 
     // constructor
-    public ProductModel(String name, Integer prize, String description) {
+    public ProductModel(String name, Integer prize, String description, Integer imgpath) {
         this.name = name;
         this.prize = prize;
         this.description = description;
         this.amount = 0;
+        this.imgpath = imgpath;
     }
 
     // recuperar el nombre del producto
@@ -32,6 +33,9 @@ public class ProductModel implements Serializable {
 
     // recuperar la descripcion del producto
     public String getDescription() { return this.description; }
+
+    // recupera la imagen del producto
+    public Integer getImage() {return this.imgpath; }
 
     // recuperar la cantidad del producto
     public Integer getAmount(){

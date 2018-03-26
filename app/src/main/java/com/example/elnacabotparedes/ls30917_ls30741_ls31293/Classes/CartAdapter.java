@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -63,6 +64,12 @@ public class CartAdapter extends ArrayAdapter<ProductModel> {
         Integer totalPrize = productPrize * productAmount;
         TextView accumulated = (TextView)row.findViewById(R.id.accumulated);
         accumulated.setText(totalPrize.toString());
+
+        ImageView image = (ImageView)row.findViewById(R.id.imageproduct);
+        Integer imFile = item.getImage();
+        image.setImageResource(imFile);
+
+
 
         return row;
     }

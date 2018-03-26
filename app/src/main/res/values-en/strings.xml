@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">ls30917_ls30741_ls31293</string>
+    <string name="buy">Buy</string>
+    <string name="product">Product</string>
+    <string name="prize_text">Total price: </string>
+    <string name="prize_example">99€</string>
+    <string name="see_product">Show</string>
+    <string name="add_cart">Add to cart</string>
+    <string name="password"> Password </string>
+    <string name="informacion"> Basic information</string>
+    <string name="enter"> Enter</string>
+    <string name="appName"> AndroShopping</string>
+    <string name="descripcion">Description: </string>
+    <string name="productInfo"></string>
+    <string name="show">Show product</string>
+    <string name="product_added">added to the cart</string>
+    <string name="xbox_description">The Xbox is a home video game console and the first installment
+        in the Xbox series of consoles manufactured by Microsoft. It was released on November 15,
+        2001 in North America, followed by Australia, Europe and Japan in 2002. It was Microsoft
+        first foray into the gaming console market. It is a sixth generation console, and competed with
+        Sony's PlayStation 2 and Nintendo's GameCube. It was also the first console produced by an
+        American company since the Atari Jaguar ceased production in 1996.</string>
+    <string name="sony_description">PlayStation 4 (PS4) is an eighth-generation home video game console
+        developed by Sony Interactive Entertainment. Announced as the successor to the PlayStation 3 during
+        a press conference on February 20, 2013, it was launched on November 15 in North America, November 29
+        in Europe, South America and Australia; and February 22, 2014, in Japan. It competes with Nintendo's
+        Wii U and Switch, and Microsoft's Xbox One.</string>
+    <string name="mac_description">It’s razor thin, feather light, and even faster and more powerful than before.
+        It has the brightest, most colorful Mac notebook display ever. And it features the Touch Bar —
+        a Multi-Touch enabled strip of glass built into the keyboard for instant access to the tools you want,
+        right when you want them. MacBook Pro is built on groundbreaking ideas. And it’s ready for yours.</string>
+    <string name="acer_description">AThe Acer neoTouch P400 is a smartphone designed by Acer Inc. After using Android
+        on phones such as the Acer beTouch E110 and Liquid A1, Acer has returned to Microsoft’s operating system.
+        It shares the hardware and design with the Acer beTouch E400 but it runs Microsoft Windows Mobile 6.5.3
+        operating system, that brings a more finger-friendly user interface. The neoTouch P400 was first introduced
+        at the Mobile World Congress 2010 in Barcelona.</string>
+    <string name="nexus_description">The Nexus 4 is a smartphone co-developed by Google and LG Electronics that runs
+        the Android operating system. It is the fourth smartphone in the Google Nexus product family, unveiled on
+        October 29, 2012, and released on November 13, 2012, and succeeded the Samsung-manufactured Galaxy Nexus.
+        As with other Nexus devices, the Nexus 4 was sold unlocked through Google Play, but was also retailed by
+        wireless carriers.</string>
+    <string name="iPad_description">The fourth-generation iPad (marketed as iPad with Retina display, colloquially
+        referred to as the iPad 4) is a tablet computer produced and marketed by Apple Inc. Compared to its predecessor,
+        the third-generation iPad, the fourth-generation iPad maintained the Retina Display but featured new and upgraded
+        components such as the Apple A6X chip and the Lightning connector, which was introduced on September 12, 2012.
+        It shipped with iOS 6.0, which provides a platform for audio-visual media, including electronic books, periodicals,
+        films, music, computer games, presentations and web content. Like the iPad 2 and the third-generation iPad, it has
+        been supported by five major iOS releases, in this case iOS 6, 7, 8, 9, and 10. iOS 11, which was released on 19
+        September 2017, does not have support for the fourth-generation iPad because of hardware limitations.</string>
+    <string name="authentication">Autentication</string>
+    <string name="email"> Email</string>
+    <string name="enter_email"> Enter email</string>
+    <string name="enter_password"> Enter password</string>
+    <string name="enter_uppercase"> ENTER</string>
+    <string name="information"> Basic information</string>
+    <string name="enter_lowercase"> enter</string>
+    <string name="splash_name"> AndroShopping</string>
+    <string name="description">Description: </string>
+    <string name="product_info"></string>
+    <string name="summary"> Purchase summary</string>
+    <string name="quantity"> Q:</string>
+    <string name="number"> 1 </string>
+    <string name="accumulated"> 100€</string>
+    <string name="total_prize"> Total Price:  </string>
+    <string name="total"> 400€ </string>
+    <string name="accept"> Accept </string>
+    <string name="success_buy">Shopping success</string>
+</resources>
