@@ -7,11 +7,11 @@ import java.io.Serializable;
  */
 
 public class ProductModel implements Serializable {
-    String name;
-    Integer prize;
-    String description;
-    Integer amount;
-    Integer imgpath;
+    private String name;
+    private Integer prize;
+    private String description;
+    private Integer amount;
+    private Integer imgpath;
 
     public ProductModel(String name, Integer prize, String description, Integer imgpath) {
         this.name = name;

@@ -5,8 +5,8 @@ package com.example.elnacabotparedes.ls30917_ls30741_ls31293.Classes;
  */
 
 public class UserModel {
-    String username;
-    String password;
+    private String username;
+    private String password;
 
     public UserModel(String username, String password){
         this.username = username;
