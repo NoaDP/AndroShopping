@@ -21,6 +21,7 @@ public class CartActivity extends AppCompatActivity {
     private Integer totalPrize = 0;
     private List<ProductModel> products;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +55,8 @@ public class CartActivity extends AppCompatActivity {
                     String text = getApplicationContext().getString(R.string.success_buy);
                     Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT);
                     toast.show();
-                    products.clear();
+                    BuyActivity.productAdapter.resetProducts();
+                    //products.clear();
                 } else {
                     // Si no hay productos en el carrito y se pulsa el boton, lanza un toast diferente
                     String text = getApplicationContext().getString(R.string.no_products_buy);

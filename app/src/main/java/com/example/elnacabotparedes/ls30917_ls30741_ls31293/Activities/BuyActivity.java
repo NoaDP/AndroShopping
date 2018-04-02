@@ -18,7 +18,7 @@ import java.util.List;
 
 public class BuyActivity extends AppCompatActivity {
 
-    private ProductAdapter productAdapter;
+    public static ProductAdapter productAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,8 +54,7 @@ public class BuyActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onResume() {
+    public void DestroyList() {
         super.onResume();
         // Vacia el carrito al volver a esta actividad.
         productAdapter.resetProducts();

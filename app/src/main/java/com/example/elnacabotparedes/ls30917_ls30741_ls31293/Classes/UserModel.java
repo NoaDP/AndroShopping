@@ -4,8 +4,8 @@ package com.example.elnacabotparedes.ls30917_ls30741_ls31293.Classes;
 //Clase UserModel para guardar la informacion del usuario para que se pueda iniciar sesion
 
 public class UserModel {
-    String username;   // campo del email (admin@salleurl.edu)
-    String password;   // campo de la contraseña (qwerty123)
+    private String username;   // campo del email (admin@salleurl.edu)
+    private String password;   // campo de la contraseña (qwerty123)
 
     //constuctor
     public UserModel(String username, String password){

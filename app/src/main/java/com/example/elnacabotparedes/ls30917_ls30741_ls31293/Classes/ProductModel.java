@@ -6,11 +6,11 @@ import java.io.Serializable;
 //Clase producto se utiliza para almacenar toda la informacion necesaria para ser printada en los layout
 
 public class ProductModel implements Serializable {
-    String name;            // nombre del producto
-    Integer prize;          // precio del producto
-    String description;     // descripcion del producto
-    Integer amount;         // cantidad del producto que quiere el cliente
-    Integer imgpath;        // imagen del producto
+    private String name;            // nombre del producto
+    private Integer prize;          // precio del producto
+    private String description;     // descripcion del producto
+    private Integer amount;         // cantidad del producto que quiere el cliente
+    private Integer imgpath;        // imagen del producto
 
     // constructor
     public ProductModel(String name, Integer prize, String description, Integer imgpath) {
