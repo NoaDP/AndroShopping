@@ -15,7 +15,7 @@
             android:id="@+id/backBar"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/back_arrow"/>
+            android:src="@drawable/ic_action_name"/>
 
         <ImageView
             android:layout_width="30dp"
@@ -27,7 +27,8 @@
             android:layout_height="wrap_content"
             android:text="@string/summary"
             android:layout_marginLeft="5dp"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
 
     </LinearLayout>
 
@@ -59,6 +60,7 @@
             android:layout_height="wrap_content"
             android:text="@string/total_prize"
             android:textSize="20sp"
+            android:textColor="@android:color/black"
 
             />
         <TextView
@@ -68,7 +70,8 @@
             android:layout_toRightOf="@id/total"
             android:text="@string/total"
             android:textSize="20sp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/black"/>
         
     </RelativeLayout>
     <LinearLayout

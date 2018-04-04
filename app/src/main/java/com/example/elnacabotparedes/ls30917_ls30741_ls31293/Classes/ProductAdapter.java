@@ -20,6 +20,7 @@ import java.util.List;
 public class ProductAdapter extends ArrayAdapter<ProductModel> {
 
     private List<ProductModel> products;
+    private Context context;
 
     // Esta clase sirve para ahorrar memoria y evitar que el listview pierda las referencias
     static class ViewHolder{
@@ -31,7 +32,7 @@ public class ProductAdapter extends ArrayAdapter<ProductModel> {
     public ProductAdapter(Context context) {
         super(context, R.layout.layout_product);
         this.products = new ArrayList<ProductModel>();
-
+        this.context = context;
         populate(context);
     }
 
@@ -100,13 +101,13 @@ public class ProductAdapter extends ArrayAdapter<ProductModel> {
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(), ProductActivity.class);
+                Intent intent = new Intent(context, ProductActivity.class);
                 intent.putExtra("PRODUCT_NAME", getItem(position).getName());
                 intent.putExtra("PRODUCT_PRIZE", getItem(position).getPrize());
                 intent.putExtra("PRODUCT_DESC", getItem(position).getDescription());
                 intent.putExtra("PRODUCT_IMG", getItem(position).getImage());
 
-                getContext().startActivity(intent);
+                context.startActivity(intent);
             }
         });
 

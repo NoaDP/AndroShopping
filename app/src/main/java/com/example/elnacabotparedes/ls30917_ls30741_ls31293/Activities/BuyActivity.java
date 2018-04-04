@@ -27,7 +27,7 @@ public class BuyActivity extends AppCompatActivity {
 
         // Creamos el listview y le añadimos nuestro adapter customizado
         ListView listView = (ListView)findViewById(R.id.listView);
-        productAdapter = new ProductAdapter(this.getApplicationContext());
+        productAdapter = new ProductAdapter(this);
         listView.setAdapter(productAdapter);
 
         // Da la funcionalidad al boton de back de la esquina superior izquierda
